@@ -1,0 +1,12 @@
+<h1>Main Page</h1>
+<a href = "home/new">글 쓰러가기</a>
+
+<%@posts. each do |x| %>
+    <p>ID : <%=x.id%></p>
+    <p>TITLE : <%=x.title%></p>
+    <p><a href = "home/show/<%=x.id%>">SHOW</a> 
+        <a href = "home/edit/<%=x.id%>">EDIT</a> 
+        <a href = "home/destroy/<%=x.id%>">DESTROY</a></p>
+    <p>------------------------------------------------</p>
+<%end%>
+
